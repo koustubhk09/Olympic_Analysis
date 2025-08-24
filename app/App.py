@@ -5,17 +5,9 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.figure_factory as ff
-import os
 
-script_dir = os.path.dirname(__file__)
-
-athlete_events_path = os.path.join(script_dir, '..','data', 'athlete_events.csv')
-noc_regions_path = os.path.join(script_dir, '..','data', 'noc_regions.csv')
-
-df = pd.read_csv(athlete_events_path)
-region_df = pd.read_csv(noc-regions_path)
-
-df = preprocessor.preprocess(df,region_df)
+df = pd.read_csv('../data/athlete_events.csv')
+region_df = pd.read_csv('../data/noc-regions.csv')
 
 st.sidebar.title('Olympic Analysis')
 st.sidebar.image('https://logos-world.net/wp-content/uploads/2021/09/Olympics-Emblem.png')
