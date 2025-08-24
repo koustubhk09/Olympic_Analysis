@@ -5,12 +5,9 @@ import plotly.express as px
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.figure_factory as ff
-import os
 
-print("Files in Data folder:",os.listdir("Data"))
-
-df = pd.read_csv("Data/athlete_events.csv")
-region_df = pd.read_csv("Data/noc_regions.csv")
+df = pd.read_csv('athlete_events.csv')
+region_df = pd.read_csv('noc_regions.csv')
 
 df = preprocessor.preprocess(df,region_df)
 
