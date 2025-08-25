@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.figure_factory as ff
 
-df = pd.read_csv('athlete_events.csv')
-region_df = pd.read_csv('noc-regions.csv')
+df = pd.read_csv('../Data/athlete_events.csv')
+region_df = pd.read_csv('../Data/noc-regions.csv')
 
 st.sidebar.title('Olympic Analysis')
 st.sidebar.image('https://logos-world.net/wp-content/uploads/2021/09/Olympics-Emblem.png')
