@@ -9,6 +9,8 @@ import plotly.figure_factory as ff
 df = pd.read_csv('Data/athlete_events.csv')
 region_df = pd.read_csv('Data/noc-regions.csv')
 
+df = df.merge(region_df, on='NOC', how='left')
+
 st.sidebar.title('Olympic Analysis')
 st.sidebar.image('https://logos-world.net/wp-content/uploads/2021/09/Olympics-Emblem.png')
 
